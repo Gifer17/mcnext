@@ -1,0 +1,82 @@
+
+ var fs      = require('fs');
+ var mime    = require('mime');
+ var sys     = require('sys');
+ var url     = require('url');
+ var zlib    = require('zlib');
+ var console = require('console-plus');
+ 
+ exports.handle = function(sourceWWW, pathWWW, req, res){
+ 	if (req.method !== 'GET') {
+		res.writeHead(404, {
+			'Content-Type': 'text/plain'
+		});
+		
+		res.end('invalid method:' + req.method);
+	} else {
+        console.log('Load file: ' + sourceWWW, console.logLevel.L_Full);
+
+        sourceWWW = sourceWWW.replace(/\\/g, '/');
+        pathWWW   = pathWWW.replace(/\\/g, '/');
+
+        if (sourceWWW[sourceWWW.length - 1] != "/"){
+            sourceWWW += "/";
+        }
+
+        if ((sourceWWW[sourceWWW.length - 1] != "/") && (sourceWWW[sourceWWW.length - 1] != "/")){
+            sourceWWW += "/";
+        }
+
+        if (pathWWW != "/" || pathWWW != "/") sourceWWW += pathWWW;
+
+        if ((sourceWWW[sourceWWW.length - 1] == "/") ||  (sourceWWW[sourceWWW.length - 1] == "/")){
+            sourceWWW += 'index.html';
+        }
+
+        fs.stat(sourceWWW, function(err){
+            if (err){
+                var _ip = req.connection.remoteAddress;
+
+                res.writeHead(404, {'Content-Type' : 'text/plain'});
+                res.end('Error 404 :-(\n\nPath: "' + pathWWW + '" not found!');
+
+                console.err(_ip + ' File: "' + sourceWWW + '" not found (on "stat" cmd). ' + err);
+            } else {
+                var readStream = fs.createReadStream(sourceWWW);
+                var acceptEncoding = req.headers['accept-encoding'];
+
+                if (!acceptEncoding) {
+                    acceptEncoding = '';
+                }
+
+                res.setHeader('Content-Type', mime.lookup(sourceWWW));
+
+                readStream.on('open', function () {
+                    if (MCServer.GZIP && acceptEncoding.match(/\bdeflate\b/)) {
+                        res.setHeader('content-encoding', 'deflate');
+
+                        readStream.pipe(zlib.createDeflate()).pipe(res);
+                    } else if (MCServer.GZIP && acceptEncoding.match(/\bgzip\b/)) {
+                        res.setHeader('content-encoding', 'gzip');
+
+                        readStream.pipe(zlib.createGzip()).pipe(res);
+                    } else {
+                        readStream.pipe(res);
+                    }
+                });
+
+                readStream.on("end", function(){
+                    console.log("End of file read" + sourceWWW, console.logLevel.L_Full);
+                });
+
+                readStream.on('error', function() {
+                    console.err("Can't load path: " + sourceWWW);
+                });
+
+                res.on('close', function(){
+                    readStream.destroy();
+                });
+            }
+        })
+	}
+ };

@@ -1,0 +1,388 @@
+/* CSS Document */
+
+#HW { /*
+	это серый слой, который используется для логина или иных блокировак интерфейса 
+*/
+ position:fixed; 
+ width:100%; 
+ height:100%; 
+ z-index:-500; 
+ margin:0px; 
+ padding:0px; 
+ left:0px; 
+ top:0px;	
+}
+
+.DT {/*
+	это вся полоска в результате выборки доступных дат для просмотра (там где "+ Показать")
+*/
+ width:99%;
+ text-align:left;
+ border: 3px double #90b4e4;
+ background:#e2effc url(img/head.png) repeat-x;
+ color:#174f9a;
+ font-family:Arial, Helvetica, sans-serif;
+ -webkit-border-radius: 7px;
+ -moz-border-radius: 7px;
+ border-radius: 7px;
+ height:1.3em;
+ margin-top:.5em;
+}
+
+.TDS{/*
+	это таймстемп в самом логе разговоров, типа - [02.03.2010 21:27:35]
+*/
+ color:#999;
+ font-size:85%;
+ vertical-align:bottom; 
+ margin-right:3px;
+}
+
+.DP{/*
+	это вся строка сообщения в логе "[02.03.2010 21:47:43]2621 > (2)Tasha У вас время сейчас сколько?"
+*/
+ width:99%; 
+ font-size:90%; 
+ font-family:Arial, Helvetica, sans-serif;
+ vertical-align:bottom;
+}
+
+.cl {/*
+	тут и так ясно - див-разделитель
+*/
+ clear:both;  
+}
+
+.cl_hr{
+ border-bottom:1px solid #90b4e4;
+ top:50px;
+ position:relative;
+}
+  
+.MTS {
+ font-size:90%; 
+ max-width:600px;
+ vertical-align:bottom;
+}
+
+.sm {
+ vertical-align:bottom;
+}
+
+.Us { /*UIN*/
+ text-indent:10px;
+ font-weight:bolder;
+ vertical-align:bottom;
+ margin-right:2px;
+}
+
+.U1 {
+ color: red;
+}
+
+.U2 {
+ color: blue;	
+}
+
+.U3 {
+ color: white;
+ background-color:#804000;	
+}
+
+.U4 {
+ color: black;
+ padding-left:14px;
+ background-image:url(img/rightarrow.gif);
+ background-position:left;
+ background-repeat:no-repeat;
+}
+
+.nU{
+ color: #970092;
+ font-size:85%;
+ text-indent:1em;
+}
+
+.cn{
+ color: #97002b;
+ font-size:85%;
+ font-weight:bolder;
+ text-indent:1em;
+}
+
+body {
+ background-image:url(img/gradient1.bmp);
+ background-repeat:repeat-y repeat-x;
+}
+
+.not_logged {
+ z-index:1000 !important;
+ background-color:#bdbdbd;
+ opacity:.35;
+ filter:alpha(opacity=35); 
+}
+
+/*=================================================*/
+#MyBody {
+ min-width:996px; 
+}
+
+#titletext {
+ text-align:left;
+ color:#3D7BCF;
+ font-family:Tahoma, Geneva, sans-serif;
+}
+  
+#MainForm {
+ width:100%;
+ font-size:90%;
+ font-family:Tahoma, Geneva, sans-serif;
+}
+
+#LoadingLogs{
+ z-index: 1001;
+ position:fixed !important;
+}
+
+#Header {
+ border:3px double #90b4e4;
+ -webkit-border-radius: 7px;
+ -moz-border-radius: 7px;
+ border-radius: 7px;
+ background-color:#e4effd;
+ width:99% !important;
+ min-width:996px !important; 
+}
+
+#LoginForm {
+ z-index:1001;	
+}
+
+.HeaderInner{
+ margin:10px;
+ width:99%;
+}
+
+.MCLinkStyle{
+ text-decoration:none;
+ color:black;	
+}
+
+.MCLinkStyle:hover {
+ color:blue;
+ text-decoration:underline !important;	
+}
+
+#ui-datepicker-div {
+ font-size:.7em;
+}
+
+.active {
+ background-image:url(img/headover.png) !important;
+ /*border:3px double #90b4e4 !important;*/
+ cursor:pointer;
+ /*margin:-2px !important;*/
+}
+
+/*.dtype, .actbtn  {
+ background-color:#eeeeee;
+ background-image:url(img/head.png);
+ background-repeat:repeat-x;
+ border:1px solid #90b4e4;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+ padding:4px;
+}*/
+
+.actbtn{
+ margin-left:1em;
+}
+
+.loggenbtn {
+ float:left;
+ /* padding-top:10px;
+ margin-left:1em;*/
+}
+
+.current {
+ /*font-weight:bolder !important;*/
+ background-image:url(img/headdown.png) !important;
+}
+
+#from, #to {
+ cursor:pointer;  
+}
+
+.hideelement {
+ display:none !important;  
+}
+
+.disabled {
+ color:#777;	
+}
+
+.finger {
+ cursor:pointer;
+}
+
+#loading {
+ margin-left:2em; 
+ float:left;
+}
+
+.fl {
+ float:left;
+}
+
+.hrv {
+ margin:0px;
+ border-right:1px solid #90b4e4;
+ width:100px;
+ text-align:left;
+ float:left;
+ height:1.5em;
+ font-size:90%;
+ line-height:1.4em;
+}
+
+.plus, .minus {
+ -webkit-border-top-left-radius: 3px;
+ -webkit-border-bottom-left-radius: 3px;
+ -moz-border-radius-bottomleft: 3px;
+ -moz-border-radius-topleft: 3px;
+ border-bottom-left-radius: 3px;
+ border-top-left-radius: 3px;
+ cursor:pointer;
+ height:20px;
+}
+
+.loading {
+ text-align:center;
+ width:180px;
+}
+
+.screen_lock {
+ z-index:1000 !important;
+}
+
+.minus {
+ background-image:url(img/bg_red.png);
+ -webkit-border-top-left-radius: 3px;
+ -webkit-border-bottom-left-radius: 3px;
+ -moz-border-radius-bottomleft: 3px;
+ -moz-border-radius-topleft: 3px;
+ border-bottom-left-radius: 3px;
+ border-top-left-radius: 3px;
+}
+
+.ext {
+ width: 250px !important;
+ text-align:center;
+}
+
+.pressbtn {
+ background-image:url(img/headdown.png) !important;
+}
+
+._pD_format {
+ margin-left:1em;
+ text-align:left;
+ width:200px;
+ font-weight:bolder;
+}
+
+#DTnav { 
+/*
+ ��� ���� ������ ���� � ���������� �� ������
+*/
+ position:fixed;
+ opacity:.9;
+ filter:alpha(opacity=90);
+ height:32px;
+ 
+}
+
+.DTnav_inner {
+/*
+ ��� ��� ���������� ����� � ������� ��������� ������������ ���� ���� ������������� ������
+*/  
+ position:absolute;
+ background:#e4effd url(img/head.png) repeat-x;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+ z-index:10;
+ height:26px;
+ border:3px double #90b4e4;
+ width:100%;
+}
+
+._content_margin {
+ margin-bottom:80px;
+}
+
+.DTnav_d{
+/*
+ ��� ���������� ��������� ����
+*/
+ float:left;
+ font-size:60%;
+ font-family:Tahoma, Geneva, sans-serif;
+ font-weight:bolder;
+ border-right:1px solid #90b4e4;
+ border-left:1px solid #90b4e4;
+ margin-left:-1px;
+ text-align:center;
+ width:70px;
+ height:26px;
+ position:relative;
+ z-index:11;
+ top:3px;
+}
+
+.toTop{
+/*
+ ��� ������ ����� � �������� "�����"
+*/ 
+ text-align:center;
+ float:right;
+ height:26px;
+ font-size:80%;
+ font-weight:bolder;
+ margin-right:.4em;
+ margin-left:-1px;
+ font-family:Tahoma, Geneva, sans-serif;
+ width:100px;
+ border-left:1px solid #90b4e4;
+ border-right:1px solid #90b4e4;
+ position:relative;
+ z-index:11;
+ top:3px;
+}
+
+.toTop a{
+ text-decoration:none;
+}
+
+.DTnav_tab {
+/*
+ ��� ������� ���� ��������
+*/
+ position:relative;
+ -webkit-border-top-left-radius: 7px;
+ -webkit-border-top-right-radius: 7px;
+ -moz-border-radius-topleft: 7px;
+ -moz-border-radius-topright: 7px;
+ border-top-left-radius: 7px;
+ border-top-right-radius: 7px;
+ border:1px solid #90b4e4;
+ background:#fdf4cc;
+ height:25px;
+ border-bottom:0px;
+ z-index:11;
+ margin-top:-26px;
+ margin-left:-1px;
+}
+/*=================================================*/
+

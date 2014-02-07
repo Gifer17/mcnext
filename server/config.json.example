@@ -1,0 +1,23 @@
+{
+    "ServPass"      : "123456",
+
+    "MyChatServerIP"   : "127.0.0.1",
+    "MyChatServerPort" : 2004,
+
+    "GZIPenable"    : false,
+
+    "STUNenable"    : false,
+    "STUNaddr1"     : "127.0.0.1",
+    "STUNaddr2"     : "127.0.0.1",
+    "STUNport1"     : "2180",
+    "STUNport2"     : "2181",
+
+    "UseSSL"        : true,
+    "HTTPSPort"     : 443,
+    "PathToKeySSL"  : "e:\\projects\\MCNext\\server\\service\\ssl\\public\\private.pem",
+    "PathToSertSSL" : "e:\\projects\\MCNext\\server\\service\\ssl\\public\\public.pem",
+
+    "AlternativePorts" : [8080, 8088],
+
+    "MyChatProfile" : "./"
+}

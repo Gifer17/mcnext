@@ -1,0 +1,719 @@
+@media all and (max-width: 400px) {
+    .__Contacts * {
+        font-size: 8pt !important;
+    }
+
+    #mclogo {
+        margin-left: -11px;
+    }
+
+    .msg_nick {
+        width: auto !important;
+        font-size: 9pt !important;
+        line-height: 10pt !important;
+        text-align: left !important;
+        border-right: none !important;
+        float: none !important;
+        display: inline-block !important;
+        padding: 0 !important;
+    }
+
+    .msg_time {
+        /*width: 60px !important;*/
+        line-height: 10pt !important;
+        font-size: 9pt !important;
+        float: left !important;
+        text-align: center !important;
+        padding-top: 4px !important;
+        margin-bottom: -4px !important;
+    }
+
+    .msg_txt {
+        margin: 0 !important;
+        line-height: 10pt !important;
+        clear: both !important;
+        font-size: 9pt !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        float: none !important;
+        text-align: left !important;
+        width: auto !important;
+        display: inline-block !important;
+        background-position: -65px 0 !important;
+    }
+
+    .nav-mychat * {
+        font-size: 8pt !important;
+    }
+
+    .ContactsWrapper {
+        top: 58px !important;
+    }
+
+    .ContentWrapper {
+        bottom: 50px !important;
+        top: 60px !important;
+    }
+
+    #DisplayUserInfoName {
+        font-size: .85em !important;
+        max-width: 140px !important;
+    }
+
+    .nav-in-contacts li .ui-btn .ui-btn-inner {
+        font-size: 8pt;
+    }
+}
+
+html, body {
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+
+.ui-loader-default{
+    width: auto;
+    line-height: 46px;
+}
+
+#ChatPage{
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#ChatPage, #login {
+    background: url(images/bg_noise.png) repeat;
+}
+
+.DisplayContacts,
+#TalkHistory,
+.ContactsFilter,
+#ChatOptions,
+#FilterResultWrapper{
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: auto;
+    right: auto;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+
+#THUserList, #FilterResult{
+    margin: 0;
+}
+
+.ContactsFilter{
+    height: auto;
+    padding: 4px 0;
+    border-left: none;
+}
+
+.ContactsFilter .ui-input-text{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.ui-mobile .ui-header .ui-body,
+.nav-in-contacts,
+#PrivateInputText,
+.myContent,
+.DisplayContacts,
+.backgoundForContacts,
+#TalkHistory,
+.ContactsFilter,
+#ChatOptions,
+#FilterResultWrapper{
+    max-width: 800px;
+}
+
+.myContent,
+.DisplayContacts,
+.backgoundForContacts,
+#TalkHistory,
+#ChatOptions,
+#FilterResultWrapper{
+    background: #fcf1c2 !important;
+}
+
+.ui-mobile .ui-header, #chatFooter{
+    background: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.ui-footer .ui-navbar li:last-child .ui-btn{
+    border-right-width: 1px !important;
+}
+
+.Options .ui-field-contain, .Options .ui-listview{
+    margin: 0;
+}
+
+.Options .ui-listview .ui-li{
+    padding: 5px;
+    height: 34px;
+}
+
+.Options .ui-field-contain label.ui-slider {
+    width: auto;
+    line-height: 32px;
+}
+
+.Options .ui-slider-switch{
+    float: right;
+}
+
+#loginContent {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    border: none;
+    background: none;
+    margin-top: -180px;
+    padding: 0;
+}
+
+#loginContent *{
+    text-align: center;
+}
+#loginContent .ui-grid-a{
+    font-size: 10pt;
+}
+
+#loginContent .ui-grid-b{
+    margin-left: -5px;
+    margin-right: -6px;
+}
+
+.backgoundForContacts{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+}
+
+.MarginBtm{
+    margin-bottom: 1em !important;
+}
+
+.MyPopup{
+    width: 100%;
+    max-width:320px;
+}
+
+.Select {
+    margin: .5em 0;
+}
+
+.Select .ui-select{
+    width: 100%;
+}
+
+.Control-Group .ui-controlgroup-controls{
+    width: 100%;
+}
+
+.Control-Group .ui-radio{
+    width: 50% !important;
+}
+
+.authWidth{
+    max-width: 320px !important;
+    padding: 1em 1em 1em 1em;
+    background: #fcf1c2 !important;
+    border: 1px solid #F7C942;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.register-login{
+    padding-top: 1em;
+}
+
+.ui-icon-loading{
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    width: 161px !important;
+    height: 17px !important;
+    background-size: 161px 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent !important;
+}
+
+.__NavigateBar {
+    padding: 0;
+}
+
+.myContent {
+    padding: 0;
+    height: 100%;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#InputText {
+    max-height: 45px;
+    height: 45px;
+}
+
+.ContactsWrapper, .ContentWrapper, .HistoryContactsWrapper, .OptionsWrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#TalkHistory,
+#ChatOptions,
+#FilterResultWrapper{
+    bottom: 0;
+}
+
+.ContactsWrapper { /* обертка контактов */
+    top: 108px;
+}
+
+.HistoryContactsWrapper{
+    top: 108px;
+    bottom: 0;
+    border-bottom: 1px solid #bbb;
+}
+
+.OptionsWrapper{
+    top: 59px;
+    bottom: 0;
+    border-bottom: 1px solid #bbb;
+}
+
+.ContentWrapper { /* обертка содержимого чата */
+    bottom: 50px;
+    top: 94px;
+}
+
+.NoMenu{
+    top: 37px !important;
+}
+
+#PrivateInputText {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 50px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0.2em;
+}
+
+
+.__Contacts{
+    margin: 4pt;
+}
+
+.__Contacts .ui-collapsible-content {
+    border: none;
+    padding: 5px 15px 0 5px;
+    background: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+.__Contacts .ui-collapsible .ui-listview {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: -5px;
+}
+
+.__Contacts .ui-collapsible-content .ui-collapsible-content,
+.__Contacts .ui-collapsible-content .ui-collapsible-heading {
+    margin-right: -15px;
+}
+
+.__Contacts .ui-collapsible-heading-toggle {
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+.__Contacts .ui-li-link-alt .ui-btn{
+    margin-top: -15px !important;
+}
+
+.__Contacts .ui-collapsible-heading {
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bolder;
+}
+
+
+.__Contacts .ui-li-has-alt {
+    border-bottom-width: 1px;
+}
+
+.__Contacts .ui-li-link-alt {
+    top: -1px;
+    right: -1px;
+}
+
+.__Contacts .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit {
+    min-height: 22px;
+    padding: 4px 53px 4px 30px;
+    line-height: 22px;
+    font-size: 10pt;
+}
+
+.__Contacts .ui-btn-icon-notext .ui-btn-inner {
+    padding: 0 !important;
+}
+
+.__Contacts .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit .ui-li-thumb {
+    top: 4px;
+}
+
+.__Contacts .ui-collapsible-heading .ui-btn-inner .ui-btn-text {
+    padding-left: 40px;
+    font-size: 10pt;
+}
+
+.__Contacts .ui-collapsible-heading .ui-btn-inner {
+    padding: 8px 5px !important;
+}
+
+.modalWindow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1500;
+    background: white;
+    opacity: 0.7;
+    top: 0;
+}
+
+.ui-loader {
+    z-index: 1501;
+}
+
+#DislpayUserInfo {
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    position: relative;
+    padding: 0 0 !important;
+}
+
+#DislpayUserInfo .ui-btn{
+    margin: -3px 0 0 10px;
+}
+
+#DisplayUserInfoName {
+    line-height: 33px;
+    font-size: 11pt;
+    color: #a95a19;
+}
+
+.UserNameWrapper{
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    right: 1px;
+    text-align: center !important;
+    min-width: 100% !important;
+}
+
+#DisplayUserInfoName:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#TypingNotifyBlock{
+    float: right;
+    height: 30px;
+    width: 30px;
+    background: url(images/pero.png) no-repeat right;
+}
+
+#TypingImage{
+    margin-left: -2px;
+}
+
+#MenuInUserInfo{
+    float: right;
+    margin-right: 10px !important;
+    margin-top: 4px !important;
+}
+
+.msg_wrapper{
+    position: relative;
+}
+
+.msg_wrapper_darker {
+    /*background: url(images/gradient_dark.png) repeat;*/
+    background-color: #fbeeb7;
+}
+
+.msg_nick {
+    float: left;
+    width: 195px;
+    font-size: 11pt;
+    line-height: 12pt;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 2px;
+    border-right: 1px solid #fce48f;
+}
+
+.msg_nick span{
+    color: blue;
+}
+
+.msg_notI {
+    color: red !important;
+    /*border-color: red !important;*/
+}
+
+.msg_time {
+    float: right;
+    /*width: 61px;*/
+    font-size: 9pt;
+    line-height: 12pt;
+    text-align: center;
+    padding: 2px 2px 2px 0;
+    color: #999999;
+}
+
+.msg_txt {
+    padding: 2px 5px 2px 5px;
+    margin-left: 200px;
+    margin-right: 61px;
+    text-align: left;
+    font-size: 10pt;
+    line-height: 12pt;
+    border-left: 1px solid #fce48f;
+}
+
+.clearINmsg{
+    clear: both;
+    border-top: 1px solid #fce48f;
+}
+
+.Nick-In-Chat{
+    border:1px solid blue;
+    border-radius: 5px;
+    display: block;
+    padding: 2px;
+}
+
+.nav-mychat .ui-btn .ui-btn-inner{
+    padding-top: 34px !important;
+}
+
+.nav-mychat .ui-btn-inner{
+    padding-bottom: 5px !important;
+}
+
+.nav-contacts .ui-btn-inner .ui-icon-custom,
+.nav-user-chat .ui-btn-inner .ui-icon-custom,
+.nav-options .ui-btn-inner .ui-icon-custom,
+.nav-talks .ui-btn-inner .ui-icon-custom{
+    border-radius: 0 !important;
+    border: none !important;
+    height: 31px !important;
+    width: 32px !important;
+    margin-left: -16px !important;
+    -moz-box-shadow: none;
+    webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.nav-mychat *{
+    font-size: 10pt;
+}
+
+.nav-contacts .ui-btn-inner .ui-icon-custom{
+    background: url(images/group.png) no-repeat !important;
+}
+
+.nav-user-chat .ui-btn-inner .ui-icon-custom{
+    background: url(images/user_comment.png) no-repeat !important;
+}
+
+.nav-options .ui-btn-inner .ui-icon-custom{
+    background: url(images/gear_in.png) no-repeat !important;
+}
+
+.nav-talks .ui-btn-inner .ui-icon-custom{
+    background: url(images/comments.png) no-repeat !important;
+}
+
+.ui-header .ui-navbar li .ui-btn {
+    border-bottom-width: 1px !important;
+}
+
+.nav-in-contacts{
+    position: relative;
+    z-index: 3;
+    border-top: 1px solid #B8B8B8;
+}
+
+.nav-in-contacts li .ui-btn .ui-btn-inner{
+    padding-top: .5em !important;
+    padding-bottom: .6em !important;
+}
+
+.contacts-li-user{
+    color: #00660a !important;
+    font-weight: normal !important;
+}
+
+._offline{
+    color: #aaa !important;
+    font-weight: normal !important;
+}
+
+.ui-mobile [data-role=dialog]{
+    left:50%;
+    margin-left: -175px;
+}
+
+.noBG {
+    background: none !important;
+}
+
+#easyRTCErrorDialog{
+    z-index: 1000;
+    left:50%;
+    right: auto;
+    margin-left: -150px;
+    width: 300px;
+}
+
+.noBorder{
+    border: none !important;
+}
+
+.Beta-version{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -105px;
+    opacity: .55;
+    color: red;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.Web-o-ChatLogo{
+    margin-bottom: 1.5em;
+}
+
+.isOfflineMsg{
+    width: 100%;
+    color: #D2691E;
+    font-weight: bolder;
+    font-size: 75%;
+    padding: .3em 1em .3em 1em;
+    clear: both;
+}
+
+.MyPopup h4{
+    margin-top: 0px;
+    margin-bottom: 7px;
+    font-size: 10pt;
+}
+
+.MyPopup .ui-mini .ui-btn-inner{
+    padding: .3em 11px .5em;
+}
+a[data-icon=phoneCall].phoneCall, a[data-icon=videoCall].videoCall, a[data-icon=closeCall].closeCall {
+    width: 36px !important;
+    height: 32px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    -moz-box-shadow: none;
+    webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+a[data-icon=closeCall].closeCall {
+    width: auto !important;
+}
+
+a[data-icon=phoneCall].phoneCall { background: url(images/phone_up.png) center no-repeat !important; }
+a[data-icon=videoCall].videoCall { background: url(images/webcam.png) center no-repeat !important; }
+a[data-icon=closeCall].closeCall { background: url(images/phone_down.png) left no-repeat !important; }
+
+.ui-icon-phoneCall, .ui-icon-videoCall, .ui-icon-closeCall{ background: none !important; }
+
+.videoCall, .phoneCall{
+    float: left;
+    top: 4px;
+}
+
+.closeCall .ui-btn-inner{
+    padding: 0 5px 0 35px !important;
+    line-height: 32px;
+}
+
+a[data-icon=videoCall].videoCall:hover, a[data-icon=phoneCall].phoneCall:hover, a[data-icon=closeCall].closeCall {
+    -moz-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
+    -webkit-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0, 0, 0, 0.2) /*{global-box-shadow-color}*/;
+    box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0, 0, 0, 0.2) /*{global-box-shadow-color}*/;
+}
+
+.VideoAndAudioCalls{
+    position: relative;
+    width: 100%;
+    background: #ddd;
+    border-bottom: 1px solid #bbb;
+    height: auto;
+}
+
+#videos{
+    position: relative;
+    text-align: center;
+    min-width: 315px;
+    max-width: 600px;
+    max-height: 400px;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.VideoMirror{
+    position: absolute;
+    left:0;
+    top:0;
+    transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    border: 4px solid #ddd;
+}
+
+.VideoCaller{
+
+}
+
+.ui-collapsible-themed-content .ui-listview:not(.ui-listview-inset) > .ui-li.ui-last-child {
+    border-bottom-width: 1px !important;
+}
+
+.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) > .ui-li.ui-first-child {
+    border-top-width: 1px !important;
+}
+

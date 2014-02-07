@@ -1,0 +1,620 @@
+/**********************************************************************************************************/
+/***************************************     CONTROLS     *************************************************/
+/**********************************************************************************************************/
+
+.TRectLabel, .TLabel, .TEdit, .TMemo, .TCheckBtn, .TRadioBtn, 
+.TComboBox, .TGroupBox, .TListBox, .TButton, .TCheckHobitBtn, .TImg,
+.TGrid {
+	position:absolute;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.75em;
+	float:left;
+	display:block;
+	resize:none;
+	margin:0px;
+	border:1px solid #7A94FF;
+}
+
+.TImg {
+	border:none;	
+}
+
+.TGrid th {
+	background:url(img/bg_for_label.png) repeat-x;
+	font-size:110%;
+	border:1px solid #90b4e4;
+}
+
+.TGrid td{
+	padding: 1px 3px 1px 5px;
+}
+
+.TRectLabel {
+	background:url(img/bg_for_label.png) repeat-x;
+	padding:0 4px 0 4px;
+}  
+
+.TLabel {
+	border:none;
+}
+ 
+.TEdit {
+	vertical-align:middle;
+	background:#fff url(img/bg_edit.png) repeat-x top;
+	padding:0px;
+}
+
+.TMemo {
+	background:#fff url(img/bg_edit.png) repeat-x top;
+}
+ 
+.TCheckBtn {
+	border:none;
+	background: url(img/bg_check_btn.png) no-repeat center left;
+	
+} 
+
+.TCheckBtn input, .TRadioBtn input, .TCheckHobitBtn input {
+	margin:0px;
+	width:16px;
+	height:100%;
+	min-height:16px;
+	padding:0px;
+	float:left;
+	cursor:pointer;
+	border-width:0px;
+	opacity:0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	line-height:0px;
+	position:absolute;
+}
+
+.TCheckBtn label {
+	margin:0 0 0 17px;
+	cursor:pointer;
+	display:inline-block;
+	float: left;
+	width: 100%;
+}
+
+.TCheckBtnOn {
+	background: url(img/bg_check_btn_on.png) no-repeat center left;
+}
+
+.TCheckBtnOver {
+	background: url(img/bg_check_btn_over.png) no-repeat center left;
+}
+
+.TCheckBtnOnOver {
+	background: url(img/bg_check_btn_on_over.png) no-repeat center left;
+}
+
+.TRadioBtn{
+	border:none;
+	background: url(img/bg_radio_btn.png) no-repeat center left;
+}
+
+.TRadioBtn label {
+	margin:0 0 0 17px;
+	cursor:pointer;
+	display:inline-block;
+	float: left;
+}
+
+.TRadioBtnOn {
+	background: url(img/bg_radio_btn_on.png) no-repeat center left;
+}
+
+.TRadioBtnOver {
+	background: url(img/bg_radio_btn_over.png) no-repeat center left;
+}
+
+.TRadioBtnOnOver {
+	background: url(img/bg_radio_btn_on_over.png) no-repeat center left;
+}
+
+.TGroupBox, .TGroupBoxExt {
+	background-color:#e4effd;
+}
+
+.TGroupBox *{
+	font-size:100%;
+}
+
+.TGroupBox p{
+	margin-left:.5em;	
+}
+
+.StaticEx{
+	position: static;
+	clear:both;
+}
+
+.Static {
+	position: static !important;
+}
+
+.TGBLabel {
+	background:url(img/bg_for_label.png) repeat-x;
+	background-color:#e2effc;
+	padding:0 4px 1px 4px;
+	border:1px solid #90b4e4;
+	float:left;
+	margin:-10px 0 0 10px;
+	position:absolute;
+	font-size:88%;
+	cursor:default;
+}
+
+.TListBox {
+	background:#fff;
+	padding:1px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+}
+
+.TListBox * {
+	font-size:100%;
+}
+
+.TListBox li {
+ list-style-image:none; list-style-position:outside; list-style-type:none;
+} 
+
+.TLBItem {
+	
+}
+
+.currentitem {
+	background:url(img/bg_yelow.png) repeat-x bottom;
+	border:1px solid #ddcf9b !important;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.TButton {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	line-height:1.7em;
+	text-align:center;
+	font-size:12px;
+	cursor:pointer;
+	color:#000;
+	
+	/* FF 3.6+ */
+	background: -moz-linear-gradient(#eff5fd, #99bae7);
+	/* IE10 */
+	background: -ms-linear-gradient(#eff5fd, #99bae7); 
+	/* Safari 4+, Chrome 2+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eff5fd), color-stop(100%, #99bae7)); 
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-linear-gradient(#eff5fd, #99bae7);
+	/* Opera 11.10 */
+	background: -o-linear-gradient(#eff5fd, #99bae7); 
+	/* IE6 & IE7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eff5fd', endColorstr='#99bae7');
+	/*        progid:DXImageTransform.Microsoft.shadow(direction=120, color=#aaaaaa, strength=2); 
+	
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4effd', endColorstr='#e0e0f0')"; /* IE8+ */
+	/* the standard */
+	background-color:#e0e0f0;
+	background: linear-gradient(#e4effd, #e0e0f0); 
+
+	box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff;
+	-moz-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; 
+	-webkit-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; 
+}
+
+.TSimpleBTN{
+	cursor:pointer;
+}
+
+.TCheckHobitBtn{
+	color:black;
+}
+
+.TCheckHobitBtn {
+	border:none;
+	background: url(img/bg_checkhobit_btn.png) no-repeat center left;
+	
+} 
+
+.TCheckHobitBtn label {
+	margin:0 0 0 .6em;
+	padding:0;
+	cursor:pointer;
+}
+
+.TCheckHobitBtnOn {
+	background: url(img/bg_checkhobit_btn_on.png) no-repeat center left;
+}
+
+.TCheckHobitBtnOver {
+	background: url(img/bg_checkhobit_btn_over.png) no-repeat center left;
+	text-decoration:underline;
+	color:#456ea4;
+}
+
+.TCheckHobitBtnOnOver {
+	background: url(img/bg_checkhobit_btn_on_over.png) no-repeat center left;
+	text-decoration:underline;
+	color:#456ea4;	
+}
+
+.TCheckDeptsBtn{
+	color:black;
+}
+
+.TreeItem{
+	
+}
+
+.THorisontalRule{
+	position:absolute;
+	float:left;
+	display:block;
+	margin:0px;
+	border-bottom:1px solid #90b4e4;
+	border-left:1px solid #90b4e4;
+	border-right:1px solid #90b4e4;
+	height:0px;
+}
+
+.LItem, .TreeItem, .TLBItem{
+	border:1px solid transparent;
+	cursor:pointer;
+	white-space:pre-wrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	display:block;
+}
+
+.TLink{
+	text-decoration:none;
+	color:#174685;
+}
+
+.TLink:hover{
+	text-decoration:underline;
+}
+
+.currentbtn {
+	background: -moz-linear-gradient(#fcd2a6, #f79732);
+	background: -ms-linear-gradient(#fcd2a6, #f79732); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcd2a6), color-stop(100%, #f79732));
+	background: -webkit-linear-gradient(#fcd2a6, #f79732);
+	background: -o-linear-gradient(#fcd2a6, #f79732);
+	filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcd2a6', endColorstr='#f79732') !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcd2a6', endColorstr='#f79732')";
+	background: linear-gradient(#fcd2a6, #f79732);
+
+	background-color:#e0e0f0;
+	
+	box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff;
+	-moz-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; 
+	-webkit-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; 
+}
+
+.activebtn {
+	background: -moz-linear-gradient(#fffbe0, #ffd64a);
+	background: -ms-linear-gradient(#fffbe0, #ffd64a);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffbe0), color-stop(100%, #ffd64a));
+	background: -webkit-linear-gradient(#fffbe0, #ffd64a);
+	background: -o-linear-gradient(#fffbe0, #ffd64a);
+	filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbe0', endColorstr='#ffd64a') !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbe0', endColorstr='#ffd64a')";
+	background: linear-gradient(#fffbe0, #ffd64a);
+	
+	background-color:#e0e0f0;
+
+	box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff;
+	-moz-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; 
+	-webkit-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; 
+}
+
+.disabledbtn {
+	background: -moz-linear-gradient(#e4effd, #b2b2b2);
+	background: -ms-linear-gradient(#e4effd, #b2b2b2);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e4effd), color-stop(100%, #b2b2b2));
+	background: -webkit-linear-gradient(#e4effd, #b2b2b2);
+	background: -o-linear-gradient(#e4effd, #b2b2b2); 
+	filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4effd', endColorstr='#b2b2b2');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4effd', endColorstr='#b2b2b2')";
+	background: linear-gradient(#e4effd, #b2b2b2);
+	
+	background-color:#e0e0f0;
+
+	box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff;
+	-moz-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; 
+	-webkit-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; 
+}
+
+.rounded {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.roundedSmall {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.noRounded{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.hideelement {
+	display:none !important;
+}
+
+.movemarker {
+	cursor:move !important;	
+}
+
+.LockWindow{
+	position:fixed;
+	height:100%;
+	width:100%;
+	background-color:#ccc;
+	opacity:.5;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	z-index: 1000;
+	top:0px;
+	left:0px;
+}
+
+.noBorder{
+	border:none;
+}
+
+.noBorderTop{
+	border-top:none !important;
+}
+
+.doubleBorder{
+	border-style:double;
+	border-width:3px;
+}
+
+.noBG{
+	background:none;
+	filter:none;
+}
+
+.noBGEx{
+	background:none !important;
+}
+
+.roundedBottom{
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+	
+  -webkit-border-bottom-left-radius: 7px !important;
+  -webkit-border-bottom-right-radius: 7px !important;
+  -moz-border-radius-bottomleft: 7px !important;
+  -moz-border-radius-bottomright: 7px !important;
+  border-bottom-left-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+
+}
+
+.roundedLeft{
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+	
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-radius-bottomleft: 7px;
+  -moz-border-radius-topleft: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.roundedRight{
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+
+  -webkit-border-top-right-radius: 7px !important;
+  -webkit-border-bottom-right-radius: 7px !important;
+  -moz-border-radius-topright: 7px !important;
+  -moz-border-radius-bottomright: 7px !important;
+  border-top-right-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+}
+
+.roundedTop{
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  -moz-border-radius-topright: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.HR3{
+	border-top:2px solid #90b4e4;
+	margin:7px 0 0 0;
+	height:2px;
+	width:100%;
+	clear:both;	
+}
+
+.HR_EX{
+	position:relative;
+	border-top:1px solid #90b4e4;
+	border-bottom:1px solid #bed2ec;
+	height:2px;
+	width:100%;
+}
+
+.Scroll{
+	overflow:auto; 
+}
+
+.Right{
+	float:right;
+}
+
+.easyShade{
+	box-shadow: 1px 1px 3px #aaa;
+	-moz-box-shadow: 1px 1px 3px #aaa; /* Для Firefox */
+	-webkit-box-shadow: 1px 1px 3px #aaa; /* Для Safari и Chrome */
+	/*filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#aaaaaa, strength=2);*/
+}
+
+.easyShadeInside{
+	box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff;	
+	-moz-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; /* Для Firefox */
+	-webkit-box-shadow: 1px 1px 3px #aaa, inset 1px 1px 2px #fff; /* Для Safari и Chrome */
+	/*filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#aaaaaa, strength=2);*/
+}
+
+.noShade {
+	box-shadow: none;	
+	-moz-box-shadow: none; /* Для Firefox */
+	-webkit-box-shadow: none; /* Для Safari и Chrome */
+}
+
+#HW { 
+/*
+	это серый слой, который используется для логина или иных блокировак интерфейса 
+*/
+	position:fixed; 
+	width:100%; 
+	height:100%; 
+	z-index:-500; 
+	margin:0px; 
+	padding:0px; 
+	left:0px; 
+	top:0px;	
+}
+
+.bolderFont{
+	font-weight:bolder;
+}
+
+.defaultBG{
+	background-color:#e4effd !important;
+	background-image:none;
+}
+
+/*
+ *    Gradients
+ */
+
+.Gradient {
+	background: -moz-linear-gradient(#e4effd, #bed2ec); /* FF 3.6+ */
+	background: -ms-linear-gradient(#e4effd, #bed2ec); /* IE10 */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e4effd), color-stop(100%, #bed2ec)); /* Safari 4+, Chrome 2+ */
+	background: -webkit-linear-gradient(#e4effd, #bed2ec); /* Safari 5.1+, Chrome 10+ */
+	background: -o-linear-gradient(#e4effd, #bed2ec); /* Opera 11.10 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4effd', endColorstr='#bed2ec'); /* IE6 &amp; IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4effd', endColorstr='#bed2ec')"; /* IE8+ */
+	background: linear-gradient(#e4effd, #bed2ec); /* the standard */
+}
+
+.not_logged {
+	z-index:1000 !important;
+	background-color:#bdbdbd;
+	opacity:.85;
+	filter:alpha(opacity=85); 
+}
+
+#LoginForm {
+	z-index:1001;	
+}
+
+.Relative {
+	position:relative;
+}
+
+.RelativeEx * {
+	position:relative;
+}
+
+.ClearDiv {
+	clear:both;
+}
+
+.MarginTopSpaserEx *{
+	margin-top: 10px;
+}
+
+.MarginBottomSpaserEx *{
+	margin-bottom: 10px;
+}
+
+.MarginBottomSpaserEx{
+	clear:both;
+}
+
+.ChengedOptions{
+	/*
+border-bottom:brown 1px solid;
+*/
+}
+
+#MessageBox{
+	z-index:9999;
+	display:none;
+}
+
+#MBBlockLayer{
+	display:none;
+	
+	position:fixed;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	z-index:9000 !important;
+	background: #eeeeee url(images/ui-bg_diagonals-thick_90_eeeeee_40x40.png) 50% 50% repeat; 
+	opacity: .80;
+	filter:Alpha(Opacity=80);
+}
+
+#MBLeftBTN{
+	margin:10px 10px 10px 30px; 
+	padding:5px 10px;
+	float: left;
+}
+
+#MBMiddleBTN{
+	margin:10px 10px 10px 10px; 
+	padding:5px 10px;
+}
+
+#MBRightBTN{
+	margin:10px 30px 10px 10px; 
+	padding:5px 10px;
+	float:right;
+}
+
+#MBText{
+	line-height:20px; 
+	margin:10px; 
+	padding:10px;
+	text-align:center;
+}
+
+.toRight {
+	float:right;
+}
